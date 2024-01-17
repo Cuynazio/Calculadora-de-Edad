@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de edad</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario su año de nacimiento
+        let yearOfBirth = prompt("Introduce tu año de nacimiento:");
+
+        // Calculadora de la edad
+        let currentYear = new Date().getFullYear();
+        let age = currentYear - yearOfBirth;
+
+        //Elemento nuevo de Parrafo
+        let p = document.createElement("p");
+
+        p.textContent = "Tu edad es la siquiente: " + age;
+
+        document.body.appendChild(p);
+
+        console.log("Tu edad es: " + age);
+    </script>
+</body>
+</html>
